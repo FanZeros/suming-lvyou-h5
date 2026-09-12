@@ -4934,8 +4934,8 @@
     {
       "uuid": "EURPUdW9Tx04k26VqIeUfuiy",
       "ext": ".lua",
-      "hash": "9036d04c",
-      "size": 12705,
+      "hash": "b37f51d1",
+      "size": 12937,
       "fs_path": "network/LocalCloud.lua",
       "prefix": "../scripts"
     },
@@ -5478,8 +5478,8 @@
     {
       "uuid": "EyE6GVd6WvzerZ7swn_1Cab5",
       "ext": ".lua",
-      "hash": "1ff10b2b",
-      "size": 109698,
+      "hash": "efa9267b",
+      "size": 110506,
       "fs_path": "network/Client.lua",
       "prefix": "../scripts"
     },
@@ -8614,8 +8614,8 @@
     {
       "uuid": "Hs4x-SH53Mq9VdgctPDR-ZfN",
       "ext": ".lua",
-      "hash": "6eb5d0b6",
-      "size": 4913,
+      "hash": "a57a1be3",
+      "size": 5171,
       "fs_path": "network/LocalHost.lua",
       "prefix": "../scripts"
     },
@@ -8798,6 +8798,6 @@
   ],
   "metadata": {
     "total_files": 1099,
-    "total_size": 527480574
+    "total_size": 527481872
   }
 }

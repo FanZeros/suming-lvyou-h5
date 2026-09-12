@@ -17,6 +17,9 @@ local LocalHost = {}
 --- 本地玩家 uid（服务端各模块以 uid 维度存取数据）
 local LOCAL_UID = 1
 
+--- 本地模式固定存档区（客户端 LOCAL_MODE 自动选服用）
+LocalHost.LOCAL_SERVER_ID = 11
+
 --- MockConnection 引用（Stop 时用）
 local mockConn_ = nil
 
@@ -86,6 +89,8 @@ function LocalHost.Start()
     Server_.LocalConnect(mockConn_, LOCAL_UID)
 
     -- 4. network 全局 shim（客户端侧唯一耦合面: GetServerConnection / RegisterRemoteEvent）
+    --    同时打开 LOCAL_MODE：客户端收到区服列表后自动选服，跳过选服面板（单机无选服概念）
+    _G.LOCAL_MODE = true
     local realNetwork = network
     _G.network = setmetatable({
         GetServerConnection = function()
