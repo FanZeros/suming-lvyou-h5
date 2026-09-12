@@ -1,9 +1,11 @@
 {
+  "$schema": "../schemas/project.schema.json",
   "project_id": "m_pkl3",
-  "version": "1.0.1",
   "author": {
     "id": "1608645143"
   },
+  "entry": "main.lua",
+  "version": "1.0.1",
   "taptap_publish": {
     "title": "宿命旅途·单机版",
     "description": "在不断轮回的冒险中，踏上这段注定无法回头的旅途。（本地回环改造版：完整服务端逻辑与存档已本地化，离线可玩）",
@@ -20,6 +22,9 @@
     "icon": "",
     "screenshots": [],
     "promotional_image": ""
+  },
+  "metadata": {
+    "updated_at": "2026-09-12T04:24:19.441Z"
   },
   "test_qrcode": {
     "url": "https://tapcode-sce.spark.xd.com/qrcode/m_pkl3_1789187059300.png",
