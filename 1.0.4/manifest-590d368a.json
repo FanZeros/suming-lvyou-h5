@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "target": "server",
+  "target": "client",
   "project_id": "m_pkl3",
   "sources": {
     "engine-res": {
@@ -364,8 +364,8 @@
     {
       "uuid": "AJD_QViVb2nkD0svljFAdQ1z",
       "ext": ".lua",
-      "hash": "2edffe7a",
-      "size": 23718,
+      "hash": "3ebb57a1",
+      "size": 23866,
       "groups": [
         "default",
         "#blocking"
@@ -3621,8 +3621,8 @@
     {
       "uuid": "D9r_segG510oonz_PJ3-IwBj",
       "ext": ".lua",
-      "hash": "b197077f",
-      "size": 12831,
+      "hash": "7582bbf2",
+      "size": 12927,
       "groups": [
         "default",
         "#blocking"
@@ -5881,8 +5881,10 @@
     {
       "uuid": "F7Xg-TaZQowEHfzRQu7wSf2f",
       "ext": ".png",
-      "hash": "61f7f7a4",
-      "size": 4713,
+      "hash": "efd11c02",
+      "size": 941,
+      "hash@windows": "61f7f7a4",
+      "size@windows": 4713,
       "fs_path": "image/ICON_ZDL.png"
     },
     {
@@ -9095,17 +9097,17 @@
     "total_files": 1100,
     "local_files": 1099,
     "remote_files": 1,
-    "total_size": 528765532,
+    "total_size": 528765776,
     "preload_files": 1,
     "preload_size": 47,
     "groups": {
       "#blocking": {
         "files": 320,
-        "size": 7154296
+        "size": 7154540
       },
       "default": {
         "files": 1100,
-        "size": 528766251
+        "size": 528766495
       },
       "#config": {
         "files": 1,
