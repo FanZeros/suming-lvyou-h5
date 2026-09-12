@@ -1,9 +1,9 @@
 {
   "format": 1,
   "version": "1.0.1",
-  "build": 3,
+  "build": 4,
   "client": "a91cc6e3",
   "server": "bed10a11",
-  "generated_at": "2026-09-12T05:12:48.705669Z",
+  "generated_at": "2026-09-12T05:21:03.792015Z",
   "engine": "ef9e23e2"
 }
