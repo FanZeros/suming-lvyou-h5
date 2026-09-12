@@ -184,6 +184,19 @@
     }
   })();
 </script>
+<div id="coi-badge" style="position:fixed;top:6px;left:6px;z-index:99999;background:rgba(0,0,0,.55);color:#7fdcff;font:12px monospace;padding:3px 8px;border-radius:4px;pointer-events:none">COI: checking...</div>
+<script>
+(function () {
+  function upd() {
+    var el = document.getElementById('coi-badge');
+    if (\!el) return;
+    var sab = typeof SharedArrayBuffer \!== 'undefined';
+    el.textContent = 'COI:' + (window.crossOriginIsolated ? 'OK' : 'FAIL') + ' SAB:' + (sab ? 'OK' : 'NO');
+  }
+  upd();
+  setInterval(upd, 2000);
+})();
+</script>
 </head>
 <body oncontextmenu="return false;">
 
