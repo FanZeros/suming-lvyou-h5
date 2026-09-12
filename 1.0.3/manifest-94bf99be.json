@@ -364,8 +364,8 @@
     {
       "uuid": "AJD_QViVb2nkD0svljFAdQ1z",
       "ext": ".lua",
-      "hash": "36c7c832",
-      "size": 22555,
+      "hash": "2edffe7a",
+      "size": 23718,
       "groups": [
         "default",
         "#blocking"
@@ -460,6 +460,17 @@
       "hash": "8daa7b6c",
       "size": 346985,
       "fs_path": "image/怪物卡牌/KP_GW_1003.png"
+    },
+    {
+      "uuid": "ASOmASATfDTTO6xumR6SE1b1",
+      "ext": ".lua",
+      "hash": "c2d2d5af",
+      "size": 2302,
+      "groups": [
+        "default",
+        "#blocking"
+      ],
+      "fs_path": "ui/ThemeOverlay.lua"
     },
     {
       "uuid": "ASRycUCPClOHwxKFNHiQ5esT",
@@ -3036,6 +3047,17 @@
       "fs_path": "image/UI_JSXQ_KGZ_HJ.png"
     },
     {
+      "uuid": "CalMQanBGhP8AYs03_bNVTFc",
+      "ext": ".lua",
+      "hash": "052f18fc",
+      "size": 1144,
+      "groups": [
+        "default",
+        "#blocking"
+      ],
+      "fs_path": "config/ThemeConfig.lua"
+    },
+    {
       "uuid": "CanDUZ1oK-IxJOrRZp9ZL-yF",
       "ext": ".png",
       "hash": "899ae510",
@@ -4936,6 +4958,13 @@
       "fs_path": "image/特效投射物/EF_ATK_16.png"
     },
     {
+      "uuid": "EHz0gSED3Fp5ph_0MMcLyCJ5",
+      "ext": ".png",
+      "hash": "fb616ccc",
+      "size": 4704695,
+      "fs_path": "image/dark_title_bg_20260912062439.png"
+    },
+    {
       "uuid": "EIDI0W2hta7IYnFYdMmKwjpf",
       "ext": ".png",
       "hash": "9142f799",
@@ -5669,8 +5698,8 @@
     {
       "uuid": "EyE6GVd6WvzerZ7swn_1Cab5",
       "ext": ".lua",
-      "hash": "e196a66f",
-      "size": 111652,
+      "hash": "a98a3e1c",
+      "size": 112020,
       "groups": [
         "default",
         "#blocking"
@@ -5898,8 +5927,10 @@
     {
       "uuid": "F8QPaVdyc4_jCyNEx3y1g4fb",
       "ext": ".png",
-      "hash": "47cba705",
-      "size": 2509,
+      "hash": "30451633",
+      "size": 4401,
+      "hash@windows": "47cba705",
+      "size@windows": 2509,
       "fs_path": "image/ICON_SP.png"
     },
     {
@@ -6108,6 +6139,13 @@
       "hash": "644f818c",
       "size": 205049,
       "fs_path": "image/ICON_YW_LANG.png"
+    },
+    {
+      "uuid": "FM6s-XW8dNJhQv4wmqj4XgrT",
+      "ext": ".png",
+      "hash": "3895a32b",
+      "size": 2422125,
+      "fs_path": "image/dark_title_bg.png"
     },
     {
       "uuid": "FNLcMWCaPwm8N8Jfr_IjNAsz",
@@ -8498,8 +8536,10 @@
     {
       "uuid": "HTdmGc45_213zLvmOJgFwmS3",
       "ext": ".png",
-      "hash": "905dd0c7",
-      "size": 810,
+      "hash": "ccaed649",
+      "size": 1501,
+      "hash@windows": "905dd0c7",
+      "size@windows": 810,
       "fs_path": "image/ICON_SJX.png"
     },
     {
@@ -9059,20 +9099,20 @@
     }
   ],
   "metadata": {
-    "total_files": 1097,
-    "local_files": 1096,
+    "total_files": 1101,
+    "local_files": 1100,
     "remote_files": 1,
-    "total_size": 527479415,
+    "total_size": 534611212,
     "preload_files": 1,
     "preload_size": 47,
     "groups": {
       "#blocking": {
-        "files": 318,
-        "size": 7149319
+        "files": 320,
+        "size": 7154296
       },
       "default": {
-        "files": 1097,
-        "size": 527480134
+        "files": 1101,
+        "size": 534611931
       },
       "#config": {
         "files": 1,
