@@ -1,21 +1,23 @@
 {
-  "project_id": "m_opp3",
-  "version": "1.0.0",
+  "project_id": "m_eaz3",
+  "version": "1.0.2",
   "author": {
-    "id": "502998661"
+    "id": "958707982"
   },
   "taptap_publish": {
-    "title": "",
+    "title": "终焉之门·单机版",
     "description": "",
     "category": "",
     "screen_orientation": "landscape",
     "collection_type": "sce",
     "trial_note": "",
-    "app_platforms": "1,2"
+    "app_platforms": "1,2",
+    "developer_id": 400200
   },
   "assets": {
-    "icon": "",
+    "icon": "./game_material/ICON_2026-09-14T05-09-21_01.png",
     "screenshots": [],
-    "promotional_image": ""
+    "promotional_image": "",
+    "icon_url": "https://tapcode-sce.spark.xd.com/assets/game_material/m_eaz3/ICON_2026-09-14T05-09-21_01.png"
   }
 }
