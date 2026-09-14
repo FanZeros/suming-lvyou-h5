@@ -10,12 +10,10 @@ UrhoX H5 产物：页面资源自包含，引擎运行时（约 70MB）按 index
 
 ```bash
 npx serve -l 8080 .      # serve.json 已带 COOP/COEP 头
-# 或: python serve_coop.py
 ```
 
 打开 http://localhost:8080 （首次加载需联网拉取引擎运行时；必须 localhost 或 HTTPS）。
 
 ## GitHub Pages
 
-已含 sw-coop.js 与自动注册逻辑，直接开 Pages 即可（首次加载会自动刷新一次以生效隔离）。
-推送前务必保留 .gitattributes（防 Windows CRLF 导致 size mismatch）。
+https://fanzeros.github.io/suming-lvyou-h5/

@@ -115,7 +115,16 @@
       pointer-events: none;
     }
 
-    
+
+    .fab-main, .fab-icon { display: none \!important; }
+    #eruda, .eruda-entry-btn, .eruda-icon-tool { display: none \!important; }
+    #watermark-logo {
+      position: fixed;
+      bottom: 0;
+      right: 8px;
+      z-index: 9999;
+      pointer-events: none;
+    }
     
     /* 对话框 */
     #dialog-overlay {
@@ -139,10 +148,6 @@
     .dialog-btn:active { background: #ccc; }
     #dialog-cancel.hidden { display: none; }
   </style>
-<style>
-  .fab-main, .fab-icon { display: none !important; }
-  #eruda, .eruda-entry-btn, .eruda-icon-tool { display: none !important; }
-</style>
 <script>
   /* eruda 节点级移除（其 #eruda 前缀样式特异度高于 CSS，直接删节点） */
   (function () {
@@ -159,9 +164,9 @@
   /* WebSocket shim：登录服务器必然连接失败 → 引擎走 skipping login 离线路径（打开即玩） */
   (function () {
     var OrigWS = window.WebSocket;
-    if (!OrigWS) return;
+    if (\!OrigWS) return;
     function PatchedWS(url, protocols) {
-      if (String(url).indexOf('entrance-new-pd.spark.xd.com') !== -1) {
+      if (String(url).indexOf('entrance-new-pd.spark.xd.com') \!== -1) {
         url = 'ws://127.0.0.1:1/';
       }
       return protocols === undefined ? new OrigWS(url) : new OrigWS(url, protocols);
@@ -184,24 +189,11 @@
     }
   })();
 </script>
-<div id="coi-badge" style="position:fixed;top:6px;left:6px;z-index:99999;background:rgba(0,0,0,.55);color:#7fdcff;font:12px monospace;padding:3px 8px;border-radius:4px;pointer-events:none">COI: checking...</div>
-<script>
-(function () {
-  function upd() {
-    var el = document.getElementById('coi-badge');
-    if (\!el) return;
-    var sab = typeof SharedArrayBuffer \!== 'undefined';
-    el.textContent = 'COI:' + (window.crossOriginIsolated ? 'OK' : 'FAIL') + ' SAB:' + (sab ? 'OK' : 'NO');
-  }
-  upd();
-  setInterval(upd, 2000);
-})();
-</script>
 </head>
 <body oncontextmenu="return false;">
 
   <div id="loading-screen">
-    <img id="loading-logo" src="https://tapcode-sce.spark.xd.com/src/web/src/LogoLarge.png" alt="UrhoX" onerror="this.style.display='none'">
+    <img id="loading-logo" crossorigin="anonymous" src="https://tapcode-sce.spark.xd.com/src/web/src/LogoLarge.png" alt="UrhoX" onerror="this.style.display='none'">
     <div id="loading-container">
       <div id="loading-progress-bg">
         <div id="loading-progress-bar"></div>
@@ -213,9 +205,7 @@
 
   <canvas id="canvas"></canvas>
 
-  
-
-  <!-- 对话框 -->
+<!-- 对话框 -->
   <div id="dialog-overlay">
     <div id="dialog-box">
       <h2 id="dialog-title">Title</h2>

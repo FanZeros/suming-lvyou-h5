@@ -3,7 +3,7 @@ self.addEventListener('install', function () { self.skipWaiting(); });
 self.addEventListener('activate', function (e) { e.waitUntil(self.clients.claim()); });
 self.addEventListener('fetch', function (e) {
   var url = new URL(e.request.url);
-  if (url.origin !== self.location.origin) return;
+  if (url.origin \!== self.location.origin) return;
   var isNav = e.request.mode === 'navigate';
   var isRoot = url.pathname === BASE || url.pathname === BASE + 'index.html';
   if (isNav && isRoot) {
